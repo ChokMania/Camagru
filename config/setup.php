@@ -68,16 +68,16 @@ $mdph = shamalo("test");
 $req = $db->prepare('INSERT INTO `User` (`login`, `prenom`, `nom`, `mail`, `pp`, `pwd`, `verified`, `act-key`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
 $req->execute(array('test', 'test', 'test', 'test@gmail.com', './ressources/img/default.png', $mdph, 1, 'ahd'));
 // creation d'une image
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206625.png', './ressources/screenshots/5daf03a206625.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206626.png', './ressources/screenshots/5daf03a206626.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206627.png', './ressources/screenshots/5daf03a206627.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206628.png', './ressources/screenshots/5daf03a206628.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206629.png', './ressources/screenshots/5daf03a206629.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206630.png', './ressources/screenshots/5daf03a206630.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206625.png', './ressources/screenshots/5daf03a206625.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206626.png', './ressources/screenshots/5daf03a206626.png', 0);");
-$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5daf03a206627.png', './ressources/screenshots/5daf03a206627.png', 0);");
-
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e21.png', './ressources/screenshots/5db2cf4a63e21.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e22.png', './ressources/screenshots/5db2cf4a63e22.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e23.png', './ressources/screenshots/5db2cf4a63e23.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e24.png', './ressources/screenshots/5db2cf4a63e24.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e25.png', './ressources/screenshots/5db2cf4a63e25.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e26.png', './ressources/screenshots/5db2cf4a63e26.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e27.png', './ressources/screenshots/5db2cf4a63e27.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e28.png', './ressources/screenshots/5db2cf4a63e28.png', 0);");
+$db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e29.png', './ressources/screenshots/5db2cf4a63e29.png', 0);");
+.png
 // creation d'un commentaire
 $db->exec("INSERT INTO `Comment` (`user_id`, `id_image`,`description`) VALUES ('1', '1', 'Ceci est un test')");
 //creation d'un like

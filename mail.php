@@ -24,7 +24,7 @@ Commentaire : "' . $comment . '"';
 function ft_sendmail($mail, $cle, $login) {
 	$sujet = "Activation de votre compte Camagru";
 	$entete = "From: Camagru" ;
-	$message = 'Bienvenue sur le Camagru de Julien et Malo powered by 42 school mac,
+	$message = 'Bienvenue sur le Camagru de Julien powered by 42 school mac,
 		Pour activer votre compte, veuillez cliquer sur le lien ci dessous ou le copier/coller dans votre navigateur internet.
 
 		http://' . $_SERVER['HTTP_HOST'] . '/login/activation.php?log='.urlencode($login).'&cle='.urlencode($cle).'
@@ -38,7 +38,7 @@ function ft_sendmail($mail, $cle, $login) {
 function ft_sendmail_forget($mail, $login, $code) {
 	$sujet = "Modification de votre compte Camagru";
 	$entete = "From: Camagru" ;
-	$message = "Bienvenue sur le Camagru de Julien et Malo powered by 42 school mac,
+	$message = "Bienvenue sur le Camagru de Julien powered by 42 school mac,
 	Pour modifier votre mdp, veuillez inscrire ce code : " . $code . " et entrez votre nouveau
 	mot de passe sur la page.
 
