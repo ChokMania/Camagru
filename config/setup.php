@@ -77,7 +77,6 @@ $db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) V
 $db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e27.png', './ressources/screenshots/5db2cf4a63e27.png', 0);");
 $db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e28.png', './ressources/screenshots/5db2cf4a63e28.png', 0);");
 $db->exec("INSERT INTO `Image` (`user_id`, `image_name`, `image_path`, `like`) VALUES ('3', '5db2cf4a63e29.png', './ressources/screenshots/5db2cf4a63e29.png', 0);");
-.png
 // creation d'un commentaire
 $db->exec("INSERT INTO `Comment` (`user_id`, `id_image`,`description`) VALUES ('1', '1', 'Ceci est un test')");
 //creation d'un like
