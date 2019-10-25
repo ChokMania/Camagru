@@ -1,0 +1,123 @@
+.name-galery-txt {
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.galery {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    position: absolute;
+    margin-bottom: 5%;
+}
+
+.galery-flex-container {
+    display: flex;
+    position: relative;
+    align-items: stretch;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    box-sizing: border-box;
+}
+
+.column-galery {
+    align-items: stretch;
+    display: flex;
+    border: 0 solid #000;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+}
+
+.galery-img-container-margin {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    margin-right: 1%;
+}
+
+.galery-img-container-margin_last {
+    position: relative;
+    background-color: white;
+    width: 100%;
+}
+
+.img-in-galery {
+    position: relative;
+    width: 100%;
+}
+
+.galery-img-container {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: grey;
+}
+
+.galery-img-container:hover .overlay,
+.child-post-1:hover .overlay {
+    opacity: 0.7;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.jaimee {
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    z-index: 2;
+}
+
+#loader {
+    height: 0;
+    overflow: hidden;
+    line-height: 60px;
+}
+
+#loader.activee {
+    height: 60px;
+}
+
+#loader img {
+    vertical-align: text-bottom;
+}
+
+@media screen and (min-width: 1100px) {
+    .galery-img-container-margin {
+        margin-right: 10px;
+    }
+    .column-galery {
+        width: 1000px;
+        margin-bottom: 10px;
+    }
+    #name-galery-txt {
+        font-size: 2em;
+    }
+}
