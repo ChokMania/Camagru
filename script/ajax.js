@@ -4,6 +4,8 @@ function myAjaxChangeLike(id_image, count) {
 		url: '../setalike.php',
 		data: { action: 'call_a_like', img_id: id_image },
 		success: function(html) {
+			if (html == "Connect if you want to like this image.")
+				return ;
 			html = JSON.parse(html);
 			$("#jaime" + count).attr("src", "../ressources/img/" + html['one']); 
 			document.getElementById('nb_like' + count).innerText = html['two'];

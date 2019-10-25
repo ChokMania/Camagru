@@ -4,8 +4,15 @@
 	require './config/connexiondb.php'; 
 	extract($_GET);
 	//verifier si dans le acs pas super admin, limage appartient bien au gars
-	if (isset($_SESSION['id']) && isset($path) && $path === "1")
-		;
+	if (isset($_SESSION['id']) && isset($path) && $path === "1") {
+		$profile = $db->query('SELECT * FROM `Image` WHERE id = "'.$id.'"');
+		$profile = $profile->fetch();
+		if ($profile['user_id'] != $_SESSION['id'])
+		{
+			header('Location: ./profil.php'); 
+			exit;
+		}
+	}
 	else if (!isset($_SESSION['id']) || !isset($_SESSION['sa']) || (isset($_SESSION['sa']) && $_SESSION['sa'] != "1")) {
 		header('Location: ./'); 
 		exit;
@@ -19,7 +26,7 @@
 	}
 	$req = $db->query('DELETE FROM `Image` WHERE `Image`.`id` = "'.$id.'"');
 	if ($path == "1")
-	header("Location: ./profil.php");
+		header("Location: ./profil.php");
 	else
 		header("Location: ./list_img.php");
 	exit;
