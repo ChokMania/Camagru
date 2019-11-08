@@ -14,7 +14,7 @@
 		if (isset($_POST['modification_profil'])){
 			$login = htmlentities(trim($login));
 			$prenom = htmlentities(trim($prenom));
-			$nom  = htmlentities(trim($nom));
+			$nom = htmlentities(trim($nom));
 			$mail = htmlentities(strtolower(trim($mail)));
 			if (!empty($login))
 			{

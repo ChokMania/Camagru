@@ -74,7 +74,7 @@ if (isset($_POST) && !empty($_POST)) {
 		}
 		if ($valid) {
 			//On insert de facon securisé les donnees recup
-
+			unset ($er_mdp);
 			//debut partie envoi message
 			$cle = shamalo($login);
 			require 'mail.php';

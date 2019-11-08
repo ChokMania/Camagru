@@ -38,6 +38,7 @@
 			}
 
 			if ($valid) {
+				unset ($er_mdp);
 				$mdph = shamalo($mdp);
 				//On insert de facon securisé les donnees recup
 				if ($_POST['mdp'])
